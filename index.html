@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Profil Mutiara Awal Fit Juang Zalukhu</title>
+    <!-- Tailwind CSS CDN untuk kemudahan styling grid & flex -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f1f5f9;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+        .main-container {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .card-box {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main-container">
+        
+        <!-- BAGIAN UTAMA (TWO COLUMN HERO) -->
+        <div class="card-box flex flex-col md:flex-row items-center justify-between gap-8">
+            
+            <!-- Kolom Teks Kiri -->
+            <div class="flex-1 flex flex-col items-start text-left">
+                <span class="text-xs font-semibold uppercase tracking-widest text-sky-400 mb-3">
+                    Halaman Profil Mahasiswa
+                </span>
+                
+                <!-- Tag h1 -->
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-4">
+                    Selamat Datang di Halaman Saya
+                </h1>
+
+                <!-- Tag p -->
+                <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-6">
+                    Halo, nama saya <strong class="text-white">Mutiara Awal Fit Juang Zalukhu</strong>. Saya sedang belajar Pemrograman Komputer Lanjutan Web dan HTML.
+                </p>
+
+                <!-- Tag a (Tombol Kenali Saya) -->
+                <a href="#tentang" class="inline-block bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold px-6 py-2.5 rounded-xl transition shadow-lg shadow-sky-500/20 text-sm">
+                    Kenali Saya ↓
+                </a>
+            </div>
+
+            <!-- Kolom Foto Kanan -->
+            <div class="w-full md:w-[320px] flex-shrink-0">
+                <div class="w-full aspect-[3/4] rounded-2xl overflow-hidden border border-slate-700 shadow-2xl bg-slate-800">
+                    <!-- Tag img -->
+                    <img src="foto_muti.jpeg" alt="Foto Mutiara Awal Fit Juang Zalukhu" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BAGIAN TENTANG SAYA (TINJAUAN & TABEL/UL) -->
+        <div id="tentang" class="card-box">
+            <h2 class="text-xl font-bold text-white mb-6">Tentang Saya</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
+                    <p class="text-xs text-slate-500 uppercase font-semibold mb-1">Nama</p>
+                    <p class="text-sm font-medium text-slate-200">Mutiara Awal Fit Juang Zalukhu</p>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
+                    <p class="text-xs text-slate-500 uppercase font-semibold mb-1">Status</p>
+                    <p class="text-sm font-medium text-slate-200">Mahasiswa</p>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
+                    <p class="text-xs text-slate-500 uppercase font-semibold mb-1">Hobi</p>
+                    <!-- Tag ul (Unordered List) -->
+                    <ul class="text-sm font-medium text-slate-200 list-disc list-inside">
+                        <li>Belajar teknologi</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tag a (Tautan ke situs lain / W3Schools) -->
+            <p class="text-xs text-slate-400">
+                Kunjungi website untuk belajar HTML: <a href="https://www.w3schools.com" target="_blank" class="text-sky-400 hover:underline">Belajar HTML di W3Schools</a>
+            </p>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="text-center text-xs text-slate-500 py-2">
+            © 2026 Mutiara Awal Fit Juang Zalukhu • Website Pembelajaran HTML
+        </footer>
+
+    </main>
+
+</body>
+</html>
